@@ -1,4 +1,49 @@
+.parent :nth-child(3n) {
+    color: red;
+}
+.test::after {
+    content: "DDD";
+}
+.instagram {
+    fill: green;
+}
+.instagram:hover {
+    fill: hotpink;
+    stroke-width: 1em;
+}
+@keyframes layout{
+    from {
+        background: green;
+        width: 100%;
+    }
+    to {
+        background: red;
+        width: 50%;
+    }
+}
+.services {
+    animation-name: layout;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 3;
+}
+.services:hover {
+    animation-play-state: paused;
 
+}
+.button-link:active {
+    transform: scale(2)
+}
+@keyframes rot-gear {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.gear {
+    animation-name: rot-gear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 .day {
     position: absolute;
     display: flex;
@@ -19,16 +64,16 @@
 }
 @keyframes sun-fly {
     from {
-        padding-top: 100%;
-        padding-left: 0%;
+        padding-top: 500px;
+        padding-left: 0;
     }
     50% {
-        padding-top: 0%;
-        padding-left: 50%;
+        padding-top: 0;
+        padding-left: 250px;
     }
     to {
-        padding-top: 100%;
-        padding-left: 100%;
+        padding-top: 500px;
+        padding-left: 700px;
     }
 }
 .sun {
